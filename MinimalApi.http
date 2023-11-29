@@ -1,0 +1,19 @@
+@MinimalApi_HostAddress = http://localhost:5239
+
+GET {{MinimalApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+
+POST {{MinimalApi_HostAddress}}/todoitems
+Content-Type: application/json
+
+{
+  "name":"walk dog",
+  "isComplete":true
+}
+###
+
+GET {{MinimalApi_HostAddress}}/todoitems
+
+###
